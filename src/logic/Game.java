@@ -47,13 +47,9 @@ public class Game {
         }
 
         // check positive diagonal
-        if (grid[1][1] == currentToken
+        return grid[1][1] == currentToken
                 && grid[0][2] == currentToken
-                && grid[2][0] == currentToken) {
-            return true;
-        }
-
-        return false;
+                && grid[2][0] == currentToken;
     }
 
     public boolean isFull() {
